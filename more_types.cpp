@@ -27,6 +27,6 @@ int main(void)
     unsigned char little_counter;   //If we treat the char variable as a signed integer number, its range would be [-128 .. 127]. If we don’t need any signed value (as in the example below), its range shifts to [0 .. 255].
 
 
-    const char test[2] = "a";   //const tier promises you'll not manipulate the string
+    const char test[2] = "a";   //const tier promises you'll not manipulate the string. String is stored in const section, which is READ-ONLY memory.
     cout << strlen(test) << endl;
 }
