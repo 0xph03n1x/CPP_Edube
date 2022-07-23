@@ -29,4 +29,16 @@ int main(void)
 
     const char test[2] = "a";   //const tier promises you'll not manipulate the string. String is stored in const section, which is READ-ONLY memory.
     cout << strlen(test) << endl;
+
+	/*
+	A variable of type float cannot have a *short* modifier. But it can have a long modifier which is synonymous with another typoe called *double*
+	For example, we expect that the value:
+	1111111111111111111.111111111111111111111
+
+	will be stored by a specific type of computer as:
+	1111111131851653120.000000
+
+	A 32-bit long float variable saves only 8 precise digits.
+	Using a double guarantees accuracy about 15-17 digits, hence the name.
+	*/
 }
