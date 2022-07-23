@@ -33,3 +33,7 @@
 
 # VSCode memes
 .vscode
+
+# CL
+*.ilk
+*.pdb
